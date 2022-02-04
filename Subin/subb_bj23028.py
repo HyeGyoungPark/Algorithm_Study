@@ -16,10 +16,10 @@ for i in range(10):
 for i in range(s):
     class_limit = 6
     if mc < nc:
-        t = min(6, y[i], nc)
+        t = min(6, y[i], nc)            # number of non-major class to take this semester
         nc -= t
         class_limit -= t
-        t = min(class_limit, x[i], mc)
+        t = min(class_limit, x[i], mc)  # number of major class to take this semester
         mc -= t
     else:
         t = min(6, x[i], mc)
@@ -27,7 +27,7 @@ for i in range(s):
         class_limit -= t
         t = min(class_limit, y[i], nc)
         nc -= t
-    if not mc and not nc:
+    if not mc and not nc:       # if there's no class left to take
         print("Nice")
         break
 if mc or nc:
