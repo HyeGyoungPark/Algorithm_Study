@@ -27,7 +27,7 @@ for i in range(s):
         class_limit -= t
         t = min(class_limit, y[i], nc)
         nc -= t
-    if not mc and not nc:       # if there's no class left to take
+    if not mc and not nc:        # if there's no class left to take
         print("Nice")
         break
 if mc or nc:
