@@ -2,7 +2,7 @@
 using namespace std;
 
 int main()
-{
+{ 
 	int n,arr[50];
 	int min_num=1000000, max_num=0;
 	
